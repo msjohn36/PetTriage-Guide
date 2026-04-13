@@ -41,8 +41,9 @@ footer, header, hgroup, menu, nav, section {
 	--red: #E94B4B;
 	--white: #FFFFFF;
 	--bg-light: #f7f7f7;
-	--font-main: 'Manrope', sans-serif;
-	--font-heading: 'Onest', sans-serif;
+	--border-color: #d0d0d0;
+	--font-main:'Onest', sans-serif;
+	--font-heading: 'Manrope',sans-serif;
 }
 
 /* global styles */
@@ -100,4 +101,79 @@ a:hover {
 }
 .skip-link:focus {
 	top: 0;
+}
+
+/* header/nav */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.75rem 2rem;
+	border-bottom: 2px solid var(--navy-dark);
+	background: var(--navy);
+	/* position: sticky; */
+	top: 0;
+	z-index: 100;
+	gap: 1rem;
+}
+header h1 {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -0.01rem;
+	color: var(--white);
+	order: 2;
+}
+header > img {
+	order: 1;
+	height: 300px;
+	width: auto;
+	display: block;
+}
+header nav {
+	order: 3;
+	margin-left: auto;
+}
+header nav ul {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+	padding: 0;
+}
+header nav a {
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--teal-light);
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.3s color 0.2s ease;
+}
+header nav a:hover {
+	border-bottom-color: var(--teal);
+	color: var(--white);
+}
+/* main layout */
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+main section {
+	padding: 3rem 0;
+	border-bottom: 1px solid var(--border-color);
+}
+main section:last-child {
+	border-bottom: none;
+}
+main section h2{
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+main section > p {
+	color: var(--navy-dark);
+	margin-bottom: 1.5rem;
+	max-width: 680px;
 }
