@@ -10,131 +10,489 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#Emergency Guide">Skip to Emergency Guide</a>
+    <a class="skip-link" href="#er-guide">Skip to Emergency Guide</a>
     <header>
         <h1>PetTriage Guide</h1>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Emergency Guide">Emergency Guide</a></li>
-                <li><a href="#Quick Help">Quick Help</a></li>
-                <li><a href="#My Pet Info">My Pet Info</a></li>
-                <li><a href="#Prep Checklist">Prep Checklist</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#er-guide">Emergency Guide</a></li>
+                <li><a href="#quick-help">Quick Help</a></li>
+                <li><a href="#my-pet-info">My Pet Info</a></li>
+                <li><a href="#prep-checklist">Prep Checklist</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <img src="images/hero.jpg" alt="PetTriage Guide logo">
-        <h2>Know When It’s an Emergency for Your Pet</h2>
-        <p>Quickly identify warning signs and understand whether your pet needs immediate ER care or can safely wait for a regular vet visit.</p>
-    </section>
     <main>
-        <section id="ERGuide">
+        <section id="hero">
+        <img src="images/logo_with_title.png" alt="PetTriage Guide logo">
+        <h2>Know When It’s an Emergency for Your Pet</h2>
+            <p>Quickly identify warning signs and understand whether your pet needs immediate ER care or can safely wait for a regular vet visit.</p>
+            <div id="carousel">
+                <div class="carousel-item active">
+                    <img src="images/derek-finch-zkrPU_1AwdU-unsplash.jpg" alt="medications and sethoscope">
+                    <div class="carousel-caption">
+                        <h3>Emergency Guide</h3>
+                        <p>Use our interactive guide to determine if your pet’s symptoms require emergency care.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/joannafotograf-cat-4988407_1920.jpg" alt="Cat in kennel at Vet">
+                    <div class="carousel-caption">
+                        <h3>Quick Help</h3>
+                        <p>Access quick tips and first aid advice for common pet emergencies.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/karsten-winegeart-loJL4ijUobg-unsplash.jpg" alt="French Bulldog on exam table at Vet">
+                    <div class="carousel-caption">
+                        <h3>My Pet Info</h3>
+                        <p>Store important information about your pet for easy access during emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>PetTriage Guide is a quick-reference resource designed to help pet owners review common warning signs and better understand their pet’s condition. It focuses on helping users decide whether a situation may require emergency care or can safely be handled by a regular veterinary visit.</p>
+            <p>The goal of this site is to support pet owners during stressful moments by providing simple, easy-to-scan information that makes decision-making faster and more manageable.</p>
+            <p>PetTriage Guide is for informational purposes only and does not replace professional veterinary advice, diagnosis, or treatment. If you are unsure about your pet’s condition, contact your veterinarian or an emergency animal hospital immediately.</p> 
+        </section>
+
+        <section id="er-guide">
             <h2>Emergency Guide</h2>
                 <p>Use our interactive guide to determine if your pet’s symptoms require emergency care.</p>
-                 <div class="symptoms-list">
-                    <h3>Breathing Difficulties</h3>
-                        <p>Is your pet having trouble breathing?</p>
-                        <ul>
-                            <li>Constant panting in a dog that is not hot or active</li>
-                            <li>Any open-mouth breathing in a cat</li>
-                            <li>Blue, gray, purple, pale, or very dark red gums or tongue</li>
-                            <li>Belly or chest working hard to pull air in</li>
-                            <li>Wheezing, whistling, or harsh breathing sounds</li>
-                            <li>Neck extended out or hunched posture while breathing</li>
-                            <li>Breathing more than 30 breaths per minute at rest</li>
-                            <li>Sudden weakness, collapse, or severe coughing fits</li>
-                        </ul>
-                </div>
-                <div class="decision-list">
-                    <h4> What should you do?</h4>
-                    <h4> See Your Regular Vet</h4>
-                        <ul>
-                            <li>Respiratory rate is only slightly elevated and stays under 30 at rest</li>
-                            <li>No labored breathing or open-mouth breathing at rest.</li>
-                            <li>NGums remain normal pink</li>
-                            <li>Your pet is alert, comfortable, and stable</li>
-                            <li>Mild cough without distress</li>
-                        </ul>
-                    <h4>Go to Emergency Vet Immediately</h4>
-                        <ul>
-                            <li>Breathing is labored, noisy, or getting worse</li>
-                            <li>Your pet is breathing with abdominal effort</li>
-                            <li>Open-mouth breathing is present</li>
-                            <li>Gums are pale, blue, gray, purple, or very dark red</li>
-                            <li>Your pet is weak, distressed, collapsing, or unable to rest comfortably</li>
-                            <li>Choking, repeated gagging, or severe coughing is happening</li>
-                        </ul>
-                </div>
-                <div class = "symptoms-list">
-                    <h3>Choking</h3>
-                        <p>Is your pet choking?</p>
-                        <ul>
-                            <li>Blue, purple, or white gums or tongue</li>
-                            <li>No breathing or sudden silence</li>
-                            <li>Panic, distress, or frantic behavior</li>
-                            <li>Pawing at the mouth</li>
-                            <li>Excessive drooling with gagging or retching</li>
-                            <li>High-pitched, wheezing, or whistling sounds</li>
-                            <li>Collapse or unconsciousness</li>
-                        </ul>
-                </div>
-                <div class = "decision-list">
-                    <h3> What should you do?</h3>
-                    <h4> See Your Regular Vet</h4>
-                        <ul>
-                            <li>Mild cough only and no signs of airway blockage</li>
-                            <li>Breathing is normal and your pet remains calm and stable</li>
-                        </ul>
-                    <h4>Go to Emergency Vet Immediately</h4>
-                        <ul>
-                            <li>Airway blockage is suspected</li>
-                            <li>Gums are abnormal in color</li>
-                            <li>Your pet is gagging, pawing at the mouth, or struggling to breathe</li>
-                            <li>Collapse, unconsciousness, or severe distress occurs</li>
-                        </ul>
+                 <div id="accordion">
+                     <p>Click on each symptom category to expand and see the warning signs and recommended actions.</p>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Breathing Difficulties</h3>
+                                <p>Is your pet having trouble breathing?</p>
+                                <ul>
+                                    <li>Constant panting in a dog that is not hot or active</li>
+                                    <li>Any open-mouth breathing in a cat</li>
+                                    <li>Blue, gray, purple, pale, or very dark red gums or tongue</li>
+                                    <li>Belly or chest working hard to pull air in</li>
+                                    <li>Wheezing, whistling, or harsh breathing sounds</li>
+                                    <li>Neck extended out or hunched posture while breathing</li>
+                                    <li>Breathing more than 30 breaths per minute at rest</li>
+                                    <li>Sudden weakness, collapse, or severe coughing fits</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Respiratory rate is only slightly elevated and stays under 30 at rest</li>
+                                        <li>No labored breathing or open-mouth breathing at rest.</li>
+                                        <li>Gums remain normal pink</li>
+                                        <li>Your pet is alert, comfortable, and stable</li>
+                                        <li>Mild cough without distress</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Breathing is labored, noisy, or getting worse</li>
+                                        <li>Your pet is breathing with abdominal effort</li>
+                                        <li>Open-mouth breathing is present</li>
+                                        <li>Gums are pale, blue, gray, purple, or very dark red</li>
+                                        <li>Your pet is weak, distressed, collapsing, or unable to rest comfortably</li>
+                                        <li>Choking, repeated gagging, or severe coughing is happening</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Trauma</h3>
+                                <p>Has your pet experienced trauma or injury?</p>
+                                <ul>
+                                    <li>Hit by car or fall from height or animal attack</li>
+                                    <li>Bleeding or open wounds</li>
+                                    <li>Difficulty moving</li>
+                                    <li>Abnormal breathing</li>
+                                    <li>Collapse or unconsciousness</li>
+                                    <li>Visible fractures</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Minor trauma with no symptoms</li>
+                                        <li>Small wounds that stop bleeding</li>
+                                        <li>Pet is alert and walking</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Major trauma (car accident, fall, animal attack)</li>
+                                        <li>Bleeding that won’t stop</li>
+                                        <li>Difficulty breathing or moving</li>
+                                        <li>Collapse or unconsciousness</li>
+                                        <li>Visible fractures or severe wounds</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Urinary Blockage</h3>  
+                                <p>Is your Cat straining to urinate or producing little to no urine?</p>
+                                <ul>
+                                    <li>Straining with little/no urine</li>
+                                    <li>Painful urination</li>
+                                    <li>Blood in urine</li>
+                                    <li>Excessive licking</li>
+                                    <li>Vomiting or lethargy</li>
+                                    <li>Painful abdomen</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Mild symptoms</li>
+                                        <li>Normal urine output</li>
+                                        <li>No severe pain</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>No urine produced</li>
+                                        <li>Repeated straining</li>
+                                        <li>Severe pain</li>
+                                        <li>Vomiting or lethargy</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Choking</h3>
+                                <p>Is your pet choking?</p>
+                                <ul>
+                                    <li>Blue, purple, or white gums or tongue</li>
+                                    <li>No breathing or sudden silence</li>
+                                    <li>Panic, distress, or frantic behavior</li>
+                                    <li>Pawing at the mouth</li>
+                                    <li>Excessive drooling with gagging or retching</li>
+                                    <li>High-pitched, wheezing, or whistling sounds</li>
+                                    <li>Collapse or unconsciousness</li>
+                                </ul>
+                        </div>
+                        <div class = "decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Mild cough only and no signs of airway blockage</li>
+                                        <li>Breathing is normal and your pet remains calm and stable</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Airway blockage is suspected</li>
+                                        <li>Gums are abnormal in color</li>
+                                        <li>Your pet is gagging, pawing at the mouth, or struggling to breathe</li>
+                                        <li>Collapse, unconsciousness, or severe distress occurs</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Seizures</h3>
+                                <p>Is your pet having a seizure?</p>
+                                <ul>
+                                    <li>Collapsing or falling to the side</li>
+                                    <li>Muscle twitching or convulsing</li>
+                                    <li>Paddling of the legs</li>
+                                    <li>Loss of consciousness</li>
+                                    <li>Foaming at the mouth</li>
+                                    <li>Loss of bladder or bowel control</li>
+                                    <li>Confusion or disorientation</li>
+                                    <li>Stumbling or loss of coordination</li>
+                                    <li>Staring into space</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Single seizure lasts less than 2–3 minutes</li>
+                                        <li>Known seizure history</li>
+                                        <li>Full recovery within 15–30 minutes</li>
+                                        <li>No injuries</li>
+                                    <li>Normal behavior afterward</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Seizure lasts more than 5 minutes</li>
+                                        <li>Multiple seizures without recovery</li>
+                                        <li>Two or more in 24 hours</li>
+                                        <li>First-time seizure</li>
+                                        <li>Delayed recovery</li>
+                                        <li>Suspected toxin or trauma</li>
+                                        <li>Collapse or breathing issues</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Heatstroke</h3>
+                                <p>Is your pet showing signs of overheating or heatstroke?</p>
+                                <ul>
+                                    <li>Excessive panting</li>
+                                    <li>Rapid breathing</li>
+                                    <li>Thick drooling</li>
+                                    <li>Abnormal gum color</li>
+                                    <li>Dark tongue or hot skin</li>
+                                    <li>Lethargy, confusion</li>
+                                    <li>Collapse, vomiting, diarrhea</li>
+                                    <li>Seizures or unconsciousness</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Mild panting improves quickly</li>
+                                        <li>Pet remains alert and walking</li>
+                                        <li>Normal gum color</li>
+                                        <li>Symptoms resolve after cooling</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Panting does not improve</li>
+                                        <li>Abnormal gums</li>
+                                        <li>Weakness or confusion</li>
+                                        <li>Vomiting, collapse</li>
+                                        <li>Seizures or unconsciousness</li>
+                                        <li>Temp >104°F</li>
+                                    </ul>
+                        </div> 
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Poison Ingestion</h3>
+                                <p>Do you think your pet ate something toxic?</p>
+                                <ul>
+                                    <li>Tremors, seizures</li>
+                                    <li>Vomiting, diarrhea</li>
+                                    <li>Breathing issues</li>
+                                    <li>Weakness</li>
+                                    <li>Pale gums</li>
+                                    <li>Known toxin exposure</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Minor exposure</li>
+                                        <li>No symptoms</li>
+                                        <li>Vet already advised monitoring</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Neurologic signs</li>
+                                        <li>Vomiting/collapse</li>
+                                        <li>Known toxins (xylitol, antifreeze, etc.)</li>
+                                        <li>Unknown ingestion</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Bleeding</h3>
+                                <p>Is your pet bleeding or injured?</p>
+                                <ul>
+                                    <li>Bleeding won’t stop</li>
+                                    <li>Bleeding from body openings</li>
+                                    <li>Pale gums</li>
+                                    <li>Collapse</li>
+                                    <li>Blood from body openings</li>
+                                    <li>Deep wounds</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Minor bleeding stops quickly</li>
+                                        <li>Small wound</li>
+                                        <li>Pet is stable</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Bleeding won’t stop</li>
+                                        <li>Bleeding from body openings</li>
+                                        <li>Signs of shock</li>
+                                        <li>Deep wounds</li>
+                                        <li>Suspected internal bleeding</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Vomiting & Diarrhea</h3>
+                                <p>Is your pet vomiting or having diarrhea?</p>
+                                <ul>
+                                    <li>Symptoms lasting more than 24 hours, or more than 12 hours in very young or elderly pets</li>
+                                    <li>Multiple episodes within a few hours</li>
+                                    <li>Blood in vomit or stool, including black or tarry stool</li>
+                                    <li>Lethargy, weakness, or collapse</li>
+                                    <li>Refusing food or water, or unable to keep water down</li>
+                                    <li>Signs of pain such as whining, a distended abdomen, or a praying position</li>
+                                    <li>Repeated retching without producing anything</li>
+                                    <li>Possible foreign body ingestion</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Mild symptoms improve within 24 hours</li>
+                                        <li>No blood is present</li>
+                                        <li>Your pet stays alert and active</li>
+                                        <li>Your pet continues eating and drinking</li>
+                                        <li>No signs of pain or repeated retching</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Symptoms are severe or worsening</li>
+                                        <li>Symptoms last more than 24 hours (or 12 hours in very young or elderly pets)</li>
+                                        <li>Blood is present in vomit or stool</li>
+                                        <li>Your pet is weak, lethargic, or collapsing</li>
+                                        <li>Your pet cannot keep water down</li>
+                                        <li>There is abdominal pain, bloating, or repeated retching</li>
+                                        <li>A foreign body or bloat is suspected</li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="er-list">
+                        <div class ="symptoms-list">
+                            <h3>Injured Paw or Limp</h3>
+                                <p>Is your pet limping or favoring a paw or leg?</p>
+                                <ul>
+                                    <li>Cannot walk or bear weight</li>
+                                    <li>Extreme pain such as whimpering, panting, shaking, or aggression</li>
+                                    <li>Limb looks bent, twisted, or out of place</li>
+                                    <li>Severe swelling, heat, or bruising</li>
+                                    <li>Open wound, bleeding, or broken nail</li>
+                                    <li>Dragging the limb or knuckle-walking</li>
+                                    <li>Limp started after trauma</li>
+                                    <li>Limp lasts more than 24 to 48 hours</li>
+                                </ul>
+                        </div>
+                        <div class ="decision-list">
+                            <h3> What should you do?</h3>
+                                <h4> See Your Regular Vet</h4>
+                                    <ul>
+                                        <li>Mild limp with no major swelling or deformity</li>
+                                        <li>Your pet can still walk and bear some weight</li>
+                                        <li>Symptoms are stable and not worsening</li>
+                                    </ul>
+                                <h4>Go to Emergency Vet Immediately</h4>
+                                    <ul>
+                                        <li>Your pet cannot bear weight</li>
+                                        <li>Extreme pain such as whimpering, panting, shaking, or aggression</li>
+                                        <li>Limb deformity, major swelling, or trauma is present</li>
+                                        <li>Bleeding or an open wound is present</li>
+                                        <li>Your pet is dragging the limb or seems neurologically abnormal</li>
+                                    </ul>
+                        </div>
+                    </div>
                 </div>
         </section>
-        <section id="Quick Help">
+
+        <section id="quick-help">
             <h2>Quick Help</h2>
-            <p>Access quick tips and first aid advice for common pet emergencies.</p>
-            <!-- Quick help content goes here -->
+                <p>Access quick tips and first aid advice for common pet emergencies.</p>
+            <div id="quick-help-cards"></div>
         </section>
-        <section id="My Pet Info">
+
+        <section id="my-pet-info">
             <h2>My Pet Info</h2>
-            <p>Store important information about your pet for easy access during emergencies.</p>
-            <!-- My Pet Info content goes here -->
+                <p>Store important information about your pet for easy access during emergencies.</p>
+            <form id="pet-info">
+                <fieldset>
+                <legend>Enter Your Pet's Information:</legend>
+
+                    <label for="pet-name">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+
+                    <label for="pet-species">Species:</label>
+                    <input type="text" id="pet-species" name="pet-species" required>
+
+                    <label for="pet-breed">Breed:</label>
+                    <input type="text" id="pet-breed" name="pet-breed">
+
+                    <label for="pet-age">Age:</label>
+                    <input type="number" id="pet-age" name="pet-age" min="0" required>
+
+                    <label for="pet-weight">Weight (lbs):</label>
+                    <input type="number" id="pet-weight" name="pet-weight" min="0" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Emergency Vet Contact Information</legend>
+
+                    <label for="emergency-vet-name">Vet Name:</label>
+                    <input type="text" id="emergency-vet-name" name="emergency-vet-name" required>
+
+                    <label for="emergency-vet-phone">Vet Phone:</label>
+                    <input type="tel" id="emergency-vet-phone" name="emergency-vet-phone" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Vet Clinic Information</legend>
+
+                    <label for="vet-clinic-name">Clinic Name:</label>
+                    <input type="text" id="vet-clinic-name" name="vet-clinic-name" required>
+
+                    <label for="vet-clinic-phone">Clinic Phone:</label>
+                    <input type="tel" id="vet-clinic-phone" name="vet-clinic-phone" required>
+
+                    <label for="vet-clinic-address">Clinic Address:</label>
+                    <input type="text" id="vet-clinic-address" name="vet-clinic-address" required>
+                </fieldset>
+                <button type="submit" id="save-pet-info">Save Pet Information</button>
+                <button type="button" id="clear-pet-info">Clear Information</button>
+            </form>
+            <div id="pet-info-display"></div>
         </section>
-        <section id="Prep Checklist">
+
+        <section id="prep-checklist">
             <h2>Prep Checklist</h2>
             <p>Prepare for emergencies with our comprehensive checklist of supplies and information to have on hand.</p>
-            <!-- Prep Checklist content goes here -->
-        </section>
-        <section id="About">
-            <h2>About</h2>
-            <p>Learn more about the PetTriage Guide and our mission to help pet owners make informed decisions during emergencies.</p>
-            <!-- About content goes here -->
+            <ul>
+                <li>First aid kit with pet-specific supplies</li>
+                <li>Emergency contact list (vet, emergency vet, poison control)</li>
+                <li>Pet’s medical records and vaccination history</li>
+                <li>Carrier or crate for safe transport</li>
+                <li>Leash and collar with ID tags</li>
+                <li>Blanket or towel for warmth and comfort</li>
+                <li>Extra food and water bowls</li>
+                <li>Non-spill water container</li>
+                <li>Any medications your pet is currently taking</li>
+                <li>Flashlight and batteries</li>
+                <li>National Animal Poison Control Center (1-888-426-4435)</li>
+            </ul>
         </section>
     </main>
         <footer>
-            <section id="Contact">
+            <div id="contact">
                 <h2>Contact</h2>
                 <p>Have questions or feedback? Get in touch with us!</p>
-                <!-- Contact content goes here -->
-            </section>
-            <p>&copy; 2024 PetTriage Guide. All rights reserved.</p>
-            <!-- <nav>
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Emergency Guide">Emergency Guide</a></li>
-                    <li><a href="#Quick Help">Quick Help</a></li>
-                    <li><a href="#My Pet Info">My Pet Info</a></li>
-                    <li><a href="#Prep Checklist">Prep Checklist</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li>Email: <a href="mailto:info@pettriageguide.com">info@pettriageguide.com</a></li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Address: 123 Pet Street, Anytown, USA</li>
                 </ul>
-            </nav> -->
+
+            </div>
+            <p>&copy; 2024 PetTriage Guide. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#er-guide">Emergency Guide</a></li>
+                    <li><a href="#quick-help">Quick Help</a></li>
+                    <li><a href="#my-pet-info">My Pet Info</a></li>
+                    <li><a href="#prep-checklist">Prep Checklist</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
 </body>
