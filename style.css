@@ -1,7 +1,5 @@
 /* Mindy Johnston */
-/* import font */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Onest:wght@400;500;600&display=swap');
- 
+
 /* CSS reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -33,6 +31,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* css variables  */
 :root {
 	--navy: #243F5E;
 	--navy-dark: #1B2F47;
@@ -64,20 +64,6 @@ img {
 	height: auto;
 	display:block;
 }
-
-/* image sizing */
-#hero > img {
-	max-width: 280px;
-	width: 100%;
-	height: auto;
-	margin-bottom: 0.5rem;
-}
-.carousel-item img {
-	width: 100%;
-	max-width: 360px;
-	object-fit: cover;
-	object-position: center;
-}
 ul {
 	list-style: disc;
 	padding-left: 1.25rem;
@@ -89,13 +75,16 @@ a {
 a:hover {
 	color: var(--teal);
 }
+
+/* skip link */
+
 .skip-link {
 	position: absolute;
 	top: -40px;
 	left: 0;
 	background: var(--teal);
 	color: var(--white);
-	padding: 8px 16px;
+	padding: 0.5rem 1rem;
 	z-index: 100;
 	transition: top 0.3s ease;
 }
@@ -111,23 +100,21 @@ header {
 	padding: 0.75rem 2rem;
 	border-bottom: 2px solid var(--navy-dark);
 	background: var(--navy);
-	/* position: sticky; */
 	top: 0;
 	z-index: 100;
 	gap: 1rem;
 }
+header > img {
+	order: 1;
+	height: 150px;
+	width: auto;
+}
 header h1 {
-	font-size: 32px;
+	order: 2;
+	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: -0.01rem;
 	color: var(--white);
-	order: 2;
-}
-header > img {
-	order: 1;
-	height: 300px;
-	width: auto;
-	display: block;
 }
 header nav {
 	order: 3;
@@ -146,7 +133,7 @@ header nav a {
 	color: var(--teal-light);
 	padding-bottom: 2px;
 	border-bottom: 2px solid transparent;
-	transition: border-color 0.3s color 0.2s ease;
+	transition: border-color 0.3s ease, color 0.2s ease;
 }
 header nav a:hover {
 	border-bottom-color: var(--teal);
@@ -159,7 +146,6 @@ main {
 	margin: 0 auto;
 	padding: 0 2rem;
 }
-
 main section {
 	padding: 3rem 0;
 	border-bottom: 1px solid var(--border-color);
@@ -176,4 +162,222 @@ main section > p {
 	color: var(--navy-dark);
 	margin-bottom: 1.5rem;
 	max-width: 680px;
+}
+
+/* hero section */
+#hero {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	align-items: center;
+	gap: 2rem;
+	padding: 2.5rem 0;
+}
+#hero > img {
+	grid-column: 1;
+	grid-row: 1;
+	max-width: 280px;
+	width: 100%;
+	height: auto;
+	align-self: end;
+}
+#hero h2 {
+	grid-column: 2;
+	grid-row: 1;
+	font-size: 32px;
+	font-weight: 800;
+	line-height: 1.15;
+	align-self: end;
+}
+#hero > p {
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 18px;
+	color: var(--navy-dark);
+	margin-bottom: 0;
+	align-self: start;
+}
+
+/* carousel */
+#carousel {
+	grid-column: 1 / 2;
+	position: relative;
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	overflow: hidden;
+	background: var(--bg-light);
+}
+#carousel .slick-slide img {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+	object-position: center;
+}
+#carousel .slick-dots {
+	bottom: 12px;
+}
+#carousel .slick-dots li button::before {
+	font-size: 12px;
+	color: var(--teal);
+	opacity: 0.75;
+}
+
+/* about section */
+#about p {
+	max-width: 720px;
+	margin-bottom: 1rem;
+	color: var(--navy-dark);
+}
+#about p :last-child {
+	margin-bottom: 0;
+}
+
+/* ER guide section */
+#er-guide h2 {
+	margin-bottom: 0.4rem;
+}
+#accordion > p {
+	font-size: 15px;
+	color: var(--navy-dark);
+	margin-bottom: 1.25rem;
+}
+.er-list {
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+	background-color: var(--bg-light);
+}
+.er-list > .symptoms-list {
+	display: none;
+	padding: 1.25rem 1.5rem;
+	border-top: 10px solid var(--border-color);
+}
+.er-list.active > .symptoms-list {
+	display: block;
+}
+.er-list-header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+	user-select: none;
+	background-color: var(--bg-light);
+	transition: background 0.15s ease;
+}
+.er-list-header:hover {
+	background-color: var(--border-color);
+}
+.er-list-header .toggle-icon {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--teal);
+	flex-shrink: 0;
+}
+.er-list-header h3 {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--navy);
+}
+.er-list-header p{
+	font-size: 16px;
+	color: var(--navy-dark);
+	margin: 0;
+}
+
+/* decision layout */
+.symptoms-list h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+	color: var(--navy-dark);
+}
+.symptoms-list > ul {
+	font-size: 16px;
+	color: var(--navy);
+	margin-bottom: 1.25rem;
+}
+.decision-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding: 1.25rem 1.5rem;
+	background: var(--bg-light);
+	border-top: 1px solid var(--border-color);
+}
+.decision-list h3 {
+	grid-column: 1 / -1;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: var(--navy-dark);
+	margin-bottom: 0.25rem;
+	display: none;
+}
+.decision-list > div {
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 1rem 1.25rem;
+	background: var(--white);
+}
+.decision-list h4 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.decision-list ul {
+	font-size: 16px;
+	color: var(--navy-dark);
+	padding-left: 1.1rem;
+}
+.decision-list ul li {
+	margin-bottom: 0.5rem;
+}
+.er-list.open .symptoms-list {
+	display: block;
+}
+.er-list {
+	display: flex;
+	flex-direction: column;
+}
+.symptoms-list {
+	padding: 1.25rem 1.5rem;
+}
+.symptoms-list h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+.symptoms-list > p {
+	font-size: 16px;
+	color: var(--navy-dark);
+	margin-bottom: 0.75rem;
+}
+.symptoms-list ul {
+	font-size: 16px;
+}
+.decision-list {
+	padding: 1.25rem 1.5rem;
+	border-top: 1px solid var(--border-color);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+.decision-list >h3{
+	grid-column: 1 / -1;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: var(--navy-dark);
+	margin-bottom: 0.25rem;
+}
+.decision-list h4{
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	
 }
