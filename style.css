@@ -207,6 +207,12 @@ main section > p {
 	overflow: hidden;
 	background: var(--bg-light);
 }
+.carousel-item img {
+	width: 100%;
+	max-width: 360px;
+	object-fit: cover;
+	object-position: center;
+}
 #carousel .slick-slide img {
 	width: 100%;
 	max-height: 400px;
@@ -220,6 +226,50 @@ main section > p {
 	font-size: 12px;
 	color: var(--teal);
 	opacity: 0.75;
+}
+#carousel .slick-dots li.slick-active button::before {
+	color: var(--teal);
+	opacity: 1;
+}
+.carousel-caption {
+	position: absolute;
+	bottom: 2.5rem;
+	left: 0;
+	right: 0;
+	padding: 1rem 1.5rem;
+	background: var(--teal);
+	color: var(--white);
+	z-index: 10;
+}
+.carousel-caption h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+.carousel-caption p {
+	font-size: 14px;
+	margin: 0;
+}
+.carousel-btn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: var(--border-color);
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.2s ease;
+}
+.carousel-btn:hover {
+	background: var(--white);
+}
+.carousel-btn.prev {
+	left: 10px;
+}
+.carousel-btn.next {
+	right: 10px;
 }
 
 /* about section */
@@ -262,7 +312,6 @@ main section > p {
 	gap: 1rem;
 	padding: 1rem 1.5rem;
 	cursor: pointer;
-	user-select: none;
 	background-color: var(--bg-light);
 	transition: background 0.15s ease;
 }
