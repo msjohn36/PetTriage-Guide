@@ -16,7 +16,7 @@
     <a class="skip-link" href="#er-guide">Skip to Emergency Guide</a>
     <header>
         <h1>PetTriage Guide</h1>
-        <img src="images/logo - Edited.png" alt="PetTriage Guide logo">
+        <img src="images/logo.png" alt="PetTriage Guide logo">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -30,7 +30,7 @@
     </header>
     <main>
         <section id="hero">
-        <img src="images/logo_with_title - Edited.png" alt="PetTriage Guide logo">
+        <img src="images/logo_with_title.png" alt="PetTriage Guide logo">
         <h2>Know When It’s an Emergency for Your Pet</h2>
             <p>Quickly identify warning signs and understand whether your pet needs immediate ER care or can safely wait for a regular vet visit.</p>
             <div id="carousel">
@@ -56,12 +56,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>PetTriage Guide is a quick-reference resource designed to help pet owners review common warning signs and better understand their pet’s condition. It focuses on helping users decide whether a situation may require emergency care or can safely be handled by a regular veterinary visit.</p>
-            <p>The goal of this site is to support pet owners during stressful moments by providing simple, easy-to-scan information that makes decision-making faster and more manageable.</p>
-            <p>PetTriage Guide is for informational purposes only and does not replace professional veterinary advice, diagnosis, or treatment. If you are unsure about your pet’s condition, contact your veterinarian or an emergency animal hospital immediately.</p> 
         </section>
 
         <section id="er-guide">
@@ -403,81 +397,95 @@
                 </div>
         </section>
 
-        <section id="quick-help">
-            <h2>Quick Help</h2>
-                <p>Access quick tips and first aid advice for common pet emergencies.</p>
-            <div id="quick-help-cards"></div>
-        </section>
+        <div id="three-col-row">
+            <section id="quick-help">
+                <h2>Quick Help</h2>
+                    <p>Access quick tips and first aid advice for common pet emergencies.</p>
+                <div id="quick-help-cards"></div>
+            </section>
+        
+            <section id="my-pet-info">
+                <h2>My Pet Info</h2>
+                    <p>Store important information about your pet for easy access during emergencies.</p>
+                <form id="pet-info">
+                    <fieldset>
+                    <legend>Enter Your Pet's Information:</legend>
 
-        <section id="my-pet-info">
-            <h2>My Pet Info</h2>
-                <p>Store important information about your pet for easy access during emergencies.</p>
-            <form id="pet-info">
-                <fieldset>
-                <legend>Enter Your Pet's Information:</legend>
+                        <label for="pet-name">Pet's Name:</label>
+                        <input type="text" id="pet-name" name="pet-name" required>
 
-                    <label for="pet-name">Pet's Name:</label>
-                    <input type="text" id="pet-name" name="pet-name" required>
+                        <label for="pet-species">Species:</label>
+                        <input type="text" id="pet-species" name="pet-species" required>
 
-                    <label for="pet-species">Species:</label>
-                    <input type="text" id="pet-species" name="pet-species" required>
+                        <label for="pet-breed">Breed:</label>
+                        <input type="text" id="pet-breed" name="pet-breed">
 
-                    <label for="pet-breed">Breed:</label>
-                    <input type="text" id="pet-breed" name="pet-breed">
+                        <label for="pet-age">Age:</label>
+                        <input type="number" id="pet-age" name="pet-age" min="0" required>
 
-                    <label for="pet-age">Age:</label>
-                    <input type="number" id="pet-age" name="pet-age" min="0" required>
+                        <label for="pet-weight">Weight (lbs):</label>
+                        <input type="number" id="pet-weight" name="pet-weight" min="0" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Emergency Vet Contact Information:</legend>
 
-                    <label for="pet-weight">Weight (lbs):</label>
-                    <input type="number" id="pet-weight" name="pet-weight" min="0" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Emergency Vet Contact Information:</legend>
+                        <label for="ER-vet-name">Emergency Vet Name:</label>
+                        <input type="text" id="ER-vet-name" name="ER-vet-name" required>
 
-                    <label for="ER-vet-name">Emergency Vet Name:</label>
-                    <input type="text" id="ER-vet-name" name="ER-vet-name" required>
+                        <label for="ER-vet-phone">Emergency Vet Phone:</label>
+                        <input type="tel" id="ER-vet-phone" name="ER-vet-phone" required>
 
-                    <label for="ER-vet-phone">Emergency Vet Phone:</label>
-                    <input type="tel" id="ER-vet-phone" name="ER-vet-phone" required>
+                        <label for="ER-vet-clinic-address">Emergency Vet Address:</label>
+                        <input type="text" id="ER-vet-clinic-address" name="ER-vet-clinic-address" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Vet Clinic Information:</legend>
 
-                    <label for="ER-vet-clinic-address">Emergency Vet Address:</label>
-                    <input type="text" id="ER-vet-clinic-address" name="ER-vet-clinic-address" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Vet Clinic Information:</legend>
+                        <label for="vet-clinic-name">Clinic Name:</label>
+                        <input type="text" id="vet-clinic-name" name="vet-clinic-name" required>
 
-                    <label for="vet-clinic-name">Clinic Name:</label>
-                    <input type="text" id="vet-clinic-name" name="vet-clinic-name" required>
+                        <label for="vet-clinic-phone">Clinic Phone:</label>
+                        <input type="tel" id="vet-clinic-phone" name="vet-clinic-phone" required>
 
-                    <label for="vet-clinic-phone">Clinic Phone:</label>
-                    <input type="tel" id="vet-clinic-phone" name="vet-clinic-phone" required>
+                        <label for="vet-clinic-address">Clinic Address:</label>
+                        <input type="text" id="vet-clinic-address" name="vet-clinic-address" required>
+                    </fieldset>
+                    <button type="submit" id="save-pet-info">Save Pet Information</button>
+                    <button type="button" id="clear-pet-info">Clear Information</button>
+                </form>
+                <div id="pet-info-display"></div>
+            </section>
 
-                    <label for="vet-clinic-address">Clinic Address:</label>
-                    <input type="text" id="vet-clinic-address" name="vet-clinic-address" required>
-                </fieldset>
-                <button type="submit" id="save-pet-info">Save Pet Information</button>
-                <button type="button" id="clear-pet-info">Clear Information</button>
-            </form>
-            <div id="pet-info-display"></div>
-        </section>
+            <section id="prep-checklist">
+                <h2>Prep Checklist</h2>
+                <p>Prepare for emergencies with our comprehensive checklist of supplies and information to have on hand.</p>
+                <ul>
+                    <li>First aid kit with pet-specific supplies</li>
+                    <li>Emergency contact list (vet, emergency vet, poison control)</li>
+                    <li>Pet’s medical records and vaccination history</li>
+                    <li>Carrier or crate for safe transport</li>
+                    <li>Leash and collar with ID tags</li>
+                    <li>Blanket or towel for warmth and comfort</li>
+                    <li>Extra food and water bowls</li>
+                    <li>Non-spill water container</li>
+                    <li>Any medications your pet is currently taking</li>
+                    <li>Flashlight and batteries</li>
+                    <li>National Animal Poison Control Center (1-888-426-4435)</li>
+                </ul>
+            </section>
+        </div>
+        <div id="about-row">
+            <section id="about">
+                <h2>About</h2>
+                <p>PetTriage Guide is a quick-reference resource designed to help pet owners review common warning signs and better understand their pet’s condition. It focuses on helping users decide whether a situation may require emergency care or can safely be handled by a regular veterinary visit.</p>
+                <p>The goal of this site is to support pet owners during stressful moments by providing simple, easy-to-scan information that makes decision-making faster and more manageable.</p> 
+            </section>
 
-        <section id="prep-checklist">
-            <h2>Prep Checklist</h2>
-            <p>Prepare for emergencies with our comprehensive checklist of supplies and information to have on hand.</p>
-            <ul>
-                <li>First aid kit with pet-specific supplies</li>
-                <li>Emergency contact list (vet, emergency vet, poison control)</li>
-                <li>Pet’s medical records and vaccination history</li>
-                <li>Carrier or crate for safe transport</li>
-                <li>Leash and collar with ID tags</li>
-                <li>Blanket or towel for warmth and comfort</li>
-                <li>Extra food and water bowls</li>
-                <li>Non-spill water container</li>
-                <li>Any medications your pet is currently taking</li>
-                <li>Flashlight and batteries</li>
-                <li>National Animal Poison Control Center (1-888-426-4435)</li>
-            </ul>
-        </section>
+            <section id="disclaimer">
+                <h2><span class="disclaimer-icon">&#9432;</span> Disclaimer</h2>
+                <p>PetTriage Guide is for informational purposes only and does not replace professional veterinary advice, diagnosis, or treatment. If you are unsure about your pet’s condition, contact your veterinarian or an emergency animal hospital immediately.</p>
+            </section>
+        </div> 
     </main>
         <footer>
             <div id="contact">
