@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Heatstroke",
+        "urgency": "ER",
+        "steps": [
+      "Move your pet to a cool, shaded area immediately.",
+      "Apply cool (not cold) water to paws, armpits, and groin.",
+      "Offer small sips of cool water if conscious.",
+      "Fan your pet while applying water.",
+      "Go to the emergency vet immediately — do not wait."
+        ]
+    },
+    {
+        "title": "Choking",
+        "urgency": "ER",
+        "steps": [
+      "Stay calm and restrain your pet gently.",
+      "Look inside the mouth for a visible object — remove only if easily reachable.",
+      "For small pets: hold upside down and give 5 firm back blows between shoulder blades.",
+      "For large pets: give 5 sharp back blows between shoulder blades.",
+      "Perform pet Heimlich maneuver if back blows fail.",
+      "Rush to emergency vet even if the obstruction clears."
+        ]
+    },
+    {
+        "title": "Toxic Food or Poison",
+        "urgency": "ER",
+        "steps": [
+     "Do NOT induce vomiting unless directed by a vet.",
+      "Identify the substance if possible and note the amount ingested.",
+      "Call ASPCA Poison Control: 1-888-426-4435.",
+      "Go to the emergency vet immediately."
+        ]
+    },
+    {
+        "title": "Bleeding",
+        "urgency": "Monitor",
+        "steps": [
+      "Apply firm, direct pressure with a clean cloth or gauze.",
+      "Do not remove the cloth — add more on top if soaked through.",
+      "Keep your pet calm and still.",
+      "If bleeding does not slow within 5 minutes, go to the emergency vet."
+        ]
+    },
+    {
+        "title": "Seizure",
+        "urgency": "ER",
+        "steps": [
+      "Do not restrain your pet or put your hands near their mouth.",
+      "Clear the area of hard or sharp objects.",
+      "Time the seizure — if over 5 minutes, go to the ER immediately.",
+      "Keep the room quiet and dim.",
+      "After the seizure, keep your pet warm and calm.",
+      "Contact your vet even if the seizure stops on its own."
+        ]
+    },
+    {
+        "title": "Difficulty Breathing",
+        "urgency": "ER",
+        "steps": [
+      "Keep your pet as calm and still as possible.",
+      "Do not muzzle your pet.",
+      "Minimize handling and transport carefully.",
+      "Go to the emergency vet immediately — do not wait."
+        ]
+    }
+]
