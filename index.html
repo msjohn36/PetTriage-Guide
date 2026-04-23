@@ -6,11 +6,35 @@
     <meta name="author" content="Mindy Johnston">
     <meta name="description" content="PetTriage Guide | Know When It’s an Emergency for Your Pet">
     <title>PetTriage Guide</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- jQuery UI css -->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+      <!-- slick carousel -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+     <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- slick carousel -->
+     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- JS -->
+    <script src="main.js" defer></script>
+    
+    
 </head>
 <body>
     <a class="skip-link" href="#er-guide">Skip to Emergency Guide</a>
@@ -30,7 +54,6 @@
     </header>
     <main>
         <section id="hero">
-        <img src="images/logo_with_title.png" alt="PetTriage Guide logo">
         <h2>Know When It’s an Emergency for Your Pet</h2>
             <p>Quickly identify warning signs and understand whether your pet needs immediate ER care or can safely wait for a regular vet visit.</p>
             <div id="carousel">
@@ -63,20 +86,19 @@
                 <p>Use our interactive guide to determine if your pet’s symptoms require emergency care.</p>
                 <p>Click on each symptom category to expand and see the warning signs and recommended actions.</p>
                 <div id="accordion">
-                    <div class="er-list">
+                    <h3>Breathing Difficulties <span class="er-list-text">Is your pet having trouble breathing?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Breathing Difficulties</h3>
-                                <p>Is your pet having trouble breathing?</p>
-                                <ul>
-                                    <li>Constant panting in a dog that is not hot or active</li>
-                                    <li>Any open-mouth breathing in a cat</li>
-                                    <li>Blue, gray, purple, pale, or very dark red gums or tongue</li>
-                                    <li>Belly or chest working hard to pull air in</li>
-                                    <li>Wheezing, whistling, or harsh breathing sounds</li>
-                                    <li>Neck extended out or hunched posture while breathing</li>
-                                    <li>Breathing more than 30 breaths per minute at rest</li>
-                                    <li>Sudden weakness, collapse, or severe coughing fits</li>
-                                </ul>
+                            <ul>
+                                <li>Constant panting in a dog that is not hot or active</li>
+                                <li>Any open-mouth breathing in a cat</li>
+                                <li>Blue, gray, purple, pale, or very dark red gums or tongue</li>
+                                <li>Belly or chest working hard to pull air in</li>
+                                <li>Wheezing, whistling, or harsh breathing sounds</li>
+                                <li>Neck extended out or hunched posture while breathing</li>
+                                <li>Breathing more than 30 breaths per minute at rest</li>
+                                <li>Sudden weakness, collapse, or severe coughing fits</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -99,18 +121,17 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Trauma <span class="er-list-text">Has your pet experienced trauma or injury?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Trauma</h3>
-                                <p>Has your pet experienced trauma or injury?</p>
-                                <ul>
-                                    <li>Hit by car or fall from height or animal attack</li>
-                                    <li>Bleeding or open wounds</li>
-                                    <li>Difficulty moving</li>
-                                    <li>Abnormal breathing</li>
-                                    <li>Collapse or unconsciousness</li>
-                                    <li>Visible fractures</li>
-                                </ul>
+                            <ul>
+                                <li>Hit by car or fall from height or animal attack</li>
+                                <li>Bleeding or open wounds</li>
+                                <li>Difficulty moving</li>
+                                <li>Abnormal breathing</li>
+                                <li>Collapse or unconsciousness</li>
+                                <li>Visible fractures</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -130,18 +151,17 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Urinary Blockage <span class="er-list-text">Is your cat straining to urinate or producing little to no urine?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Urinary Blockage</h3>  
-                                <p>Is your Cat straining to urinate or producing little to no urine?</p>
-                                <ul>
-                                    <li>Straining with little/no urine</li>
-                                    <li>Painful urination</li>
-                                    <li>Blood in urine</li>
-                                    <li>Excessive licking</li>
-                                    <li>Vomiting or lethargy</li>
-                                    <li>Painful abdomen</li>
-                                </ul>
+                            <ul>
+                                <li>Straining with little/no urine</li>
+                                <li>Painful urination</li>
+                                <li>Blood in urine</li>
+                                <li>Excessive licking</li>
+                                <li>Vomiting or lethargy</li>
+                                <li>Painful abdomen</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -160,19 +180,18 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Choking <span class="er-list-text">Is your pet choking?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Choking</h3>
-                                <p>Is your pet choking?</p>
-                                <ul>
-                                    <li>Blue, purple, or white gums or tongue</li>
-                                    <li>No breathing or sudden silence</li>
-                                    <li>Panic, distress, or frantic behavior</li>
-                                    <li>Pawing at the mouth</li>
-                                    <li>Excessive drooling with gagging or retching</li>
-                                    <li>High-pitched, wheezing, or whistling sounds</li>
-                                    <li>Collapse or unconsciousness</li>
-                                </ul>
+                            <ul>
+                                <li>Blue, purple, or white gums or tongue</li>
+                                <li>No breathing or sudden silence</li>
+                                <li>Panic, distress, or frantic behavior</li>
+                                <li>Pawing at the mouth</li>
+                                <li>Excessive drooling with gagging or retching</li>
+                                <li>High-pitched, wheezing, or whistling sounds</li>
+                                <li>Collapse or unconsciousness</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -190,21 +209,20 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Seizures <span class="er-list-text">Is your pet having a seizure?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Seizures</h3>
-                                <p>Is your pet having a seizure?</p>
-                                <ul>
-                                    <li>Collapsing or falling to the side</li>
-                                    <li>Muscle twitching or convulsing</li>
-                                    <li>Paddling of the legs</li>
-                                    <li>Loss of consciousness</li>
-                                    <li>Foaming at the mouth</li>
-                                    <li>Loss of bladder or bowel control</li>
-                                    <li>Confusion or disorientation</li>
-                                    <li>Stumbling or loss of coordination</li>
-                                    <li>Staring into space</li>
-                                </ul>
+                            <ul>
+                                <li>Collapsing or falling to the side</li>
+                                <li>Muscle twitching or convulsing</li>
+                                <li>Paddling of the legs</li>
+                                <li>Loss of consciousness</li>
+                                <li>Foaming at the mouth</li>
+                                <li>Loss of bladder or bowel control</li>
+                                <li>Confusion or disorientation</li>
+                                <li>Stumbling or loss of coordination</li>
+                                <li>Staring into space</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -228,20 +246,19 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Heatstroke <span class="er-list-text">Is your pet showing signs of overheating or heatstroke?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Heatstroke</h3>
-                                <p>Is your pet showing signs of overheating or heatstroke?</p>
-                                <ul>
-                                    <li>Excessive panting</li>
-                                    <li>Rapid breathing</li>
-                                    <li>Thick drooling</li>
-                                    <li>Abnormal gum color</li>
-                                    <li>Dark tongue or hot skin</li>
-                                    <li>Lethargy, confusion</li>
-                                    <li>Collapse, vomiting, diarrhea</li>
-                                    <li>Seizures or unconsciousness</li>
-                                </ul>
+                            <ul>
+                                <li>Excessive panting</li>
+                                <li>Rapid breathing</li>
+                                <li>Thick drooling</li>
+                                <li>Abnormal gum color</li>
+                                <li>Dark tongue or hot skin</li>
+                                <li>Lethargy, confusion</li>
+                                <li>Collapse, vomiting, diarrhea</li>
+                                <li>Seizures or unconsciousness</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -263,18 +280,17 @@
                                     </ul>
                         </div> 
                     </div>
-                    <div class="er-list">
+                    <h3>Poison Ingestion <span class="er-list-text">Do you think your pet ate something toxic?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Poison Ingestion</h3>
-                                <p>Do you think your pet ate something toxic?</p>
-                                <ul>
-                                    <li>Tremors, seizures</li>
-                                    <li>Vomiting, diarrhea</li>
-                                    <li>Breathing issues</li>
-                                    <li>Weakness</li>
-                                    <li>Pale gums</li>
-                                    <li>Known toxin exposure</li>
-                                </ul>
+                            <ul>
+                                <li>Tremors, seizures</li>
+                                <li>Vomiting, diarrhea</li>
+                                <li>Breathing issues</li>
+                                <li>Weakness</li>
+                                <li>Pale gums</li>
+                                <li>Known toxin exposure</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -293,18 +309,17 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Bleeding <span class="er-list-text">Is your pet bleeding or injured?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Bleeding</h3>
-                                <p>Is your pet bleeding or injured?</p>
-                                <ul>
-                                    <li>Bleeding won’t stop</li>
-                                    <li>Bleeding from body openings</li>
-                                    <li>Pale gums</li>
-                                    <li>Collapse</li>
-                                    <li>Blood from body openings</li>
-                                    <li>Deep wounds</li>
-                                </ul>
+                            <ul>
+                                <li>Bleeding won’t stop</li>
+                                <li>Bleeding from body openings</li>
+                                <li>Pale gums</li>
+                                <li>Collapse</li>
+                                <li>Blood from body openings</li>
+                                <li>Deep wounds</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -324,20 +339,19 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Vomiting & Diarrhea <span class="er-list-text">Is your pet vomiting or having diarrhea?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Vomiting & Diarrhea</h3>
-                                <p>Is your pet vomiting or having diarrhea?</p>
-                                <ul>
-                                    <li>Symptoms lasting more than 24 hours, or more than 12 hours in very young or elderly pets</li>
-                                    <li>Multiple episodes within a few hours</li>
-                                    <li>Blood in vomit or stool, including black or tarry stool</li>
-                                    <li>Lethargy, weakness, or collapse</li>
-                                    <li>Refusing food or water, or unable to keep water down</li>
-                                    <li>Signs of pain such as whining, a distended abdomen, or a praying position</li>
-                                    <li>Repeated retching without producing anything</li>
-                                    <li>Possible foreign body ingestion</li>
-                                </ul>
+                            <ul>
+                                <li>Symptoms lasting more than 24 hours, or more than 12 hours in very young or elderly pets</li>
+                                <li>Multiple episodes within a few hours</li>
+                                <li>Blood in vomit or stool, including black or tarry stool</li>
+                                <li>Lethargy, weakness, or collapse</li>
+                                <li>Refusing food or water, or unable to keep water down</li>
+                                <li>Signs of pain such as whining, a distended abdomen, or a praying position</li>
+                                <li>Repeated retching without producing anything</li>
+                                <li>Possible foreign body ingestion</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -361,20 +375,19 @@
                                     </ul>
                         </div>
                     </div>
-                    <div class="er-list">
+                    <h3>Injured Paw or Limp <span class="er-list-text">Is your pet limping or favoring a paw or leg?</span></h3>
+                    <div>
                         <div class="symptoms-list">
-                            <h3>Injured Paw or Limp</h3>
-                                <p>Is your pet limping or favoring a paw or leg?</p>
-                                <ul>
-                                    <li>Cannot walk or bear weight</li>
-                                    <li>Extreme pain such as whimpering, panting, shaking, or aggression</li>
-                                    <li>Limb looks bent, twisted, or out of place</li>
-                                    <li>Severe swelling, heat, or bruising</li>
-                                    <li>Open wound, bleeding, or broken nail</li>
-                                    <li>Dragging the limb or knuckle-walking</li>
-                                    <li>Limp started after trauma</li>
-                                    <li>Limp lasts more than 24 to 48 hours</li>
-                                </ul>
+                            <ul>
+                                <li>Cannot walk or bear weight</li>
+                                <li>Extreme pain such as whimpering, panting, shaking, or aggression</li>
+                                <li>Limb looks bent, twisted, or out of place</li>
+                                <li>Severe swelling, heat, or bruising</li>
+                                <li>Open wound, bleeding, or broken nail</li>
+                                <li>Dragging the limb or knuckle-walking</li>
+                                <li>Limp started after trauma</li>
+                                <li>Limp lasts more than 24 to 48 hours</li>
+                            </ul>
                         </div>
                         <div class="decision-list">
                             <h3> What should you do?</h3>
@@ -397,7 +410,7 @@
                 </div>
         </section>
 
-        <div id="three-col-row">
+        <div id="two-col-row">
             <section id="quick-help">
                 <h2>Quick Help</h2>
                     <p>Access quick tips and first aid advice for common pet emergencies.</p>
@@ -450,13 +463,16 @@
                         <label for="vet-clinic-address">Clinic Address:</label>
                         <input type="text" id="vet-clinic-address" name="vet-clinic-address" required>
                     </fieldset>
-                    <button type="submit" id="save-pet-info">Save Pet Information</button>
-                    <button type="button" id="clear-pet-info">Clear Information</button>
+                    <div class="button">
+                        <button type="submit" id="save-pet-info">Save Pet Information</button>
+                        <button type="button" id="clear-pet-info">Clear Information</button>
+                    </div>
                 </form>
                 <div id="pet-info-display"></div>
             </section>
-
-            <section id="prep-checklist">
+        </div>
+        <section id="prep-checklist">
+            <div class="prep-checklist">
                 <h2>Prep Checklist</h2>
                 <p>Prepare for emergencies with our comprehensive checklist of supplies and information to have on hand.</p>
                 <ul>
@@ -472,8 +488,9 @@
                     <li>Flashlight and batteries</li>
                     <li>National Animal Poison Control Center (1-888-426-4435)</li>
                 </ul>
+            </div>
+            <img src="images/medical-concept-with-wooden-blocks-with-icons-first-aid-bag-blue-table-flat-lay.jpg" alt="first aid kit with icons around it">
             </section>
-        </div>
         <div id="about-row">
             <section id="about">
                 <h2>About</h2>
