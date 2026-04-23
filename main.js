@@ -46,6 +46,9 @@ async function quickHelp (){
                 </div>`;
                 container.insterAdjacentHTML("beforeend",cardHtml);
         });
+    }catch(error){
+        container.innerHTML = `<p class="ajax-error"> Unable to load quick help content. Please try again later.</p>`;
+        console.error(error);
     }
 }
 
@@ -53,4 +56,5 @@ async function quickHelp (){
 $(document).ready(function(){
     accordion();
     carousel();
+    quickHelp();
 });
