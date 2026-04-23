@@ -30,22 +30,25 @@ function carousel(){
 async function quickHelp (){
     const container = document.querySelector("#quick-help-cards");
     try{
-        const response = wait fetch("quickhelp.json");
-        const(data) = wait resoinse.json();
+        const response = await fetch("quickhelp.json");
+        const data = await response.json();
+
         container.innerHTML="";
+
         data.forEach(card => {
             const urgencyClass = card.urgency === "ER" ? "qh-urgency--er": "qh-urgency--monitor";
             const urgencyLabel = card.urgency === "ER"?"Emergency" : "Monitor";
-            const steps=card.steps.map(step => `<li>${step}</li>`).join("");
-            const cardHTML = `<div class="quick-help-card">
+            const stepsHtml=card.steps.map(step => `<li>${step}</li>`).join("");
+            const cardHtml = `<div class="quick-help-card">
                     <div class="qh-card-header">
                         <h3>${card.title}</h3>
                         <span class="qh-urgency ${urgencyClass}">${urgencyLabel}</span>
                     </div>
                     <ol class="qh-steps">${stepsHtml}</ol>
                 </div>`;
-                container.insterAdjacentHTML("beforeend",cardHtml);
+                container.insertAdjacentHTML("beforeend",cardHtml);
         });
+
     }catch(error){
         container.innerHTML = `<p class="ajax-error"> Unable to load quick help content. Please try again later.</p>`;
         console.error(error);
