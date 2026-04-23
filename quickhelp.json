@@ -1,13 +1,12 @@
 [
-    {
-        "title": "Heatstroke",
-        "urgency": "ER",
+     {
+        "title": "Bleeding",
+        "urgency": "Monitor",
         "steps": [
-      "Move your pet to a cool, shaded area immediately.",
-      "Apply cool (not cold) water to paws, armpits, and groin.",
-      "Offer small sips of cool water if conscious.",
-      "Fan your pet while applying water.",
-      "Go to the emergency vet immediately — do not wait."
+      "Apply firm, direct pressure with a clean cloth or gauze.",
+      "Do not remove the cloth — add more on top if soaked through.",
+      "Keep your pet calm and still.",
+      "If bleeding does not slow within 5 minutes, go to the emergency vet."
         ]
     },
     {
@@ -23,23 +22,24 @@
         ]
     },
     {
-        "title": "Toxic Food or Poison",
+        "title": "Difficulty Breathing",
         "urgency": "ER",
         "steps": [
-     "Do NOT induce vomiting unless directed by a vet.",
-      "Identify the substance if possible and note the amount ingested.",
-      "Call ASPCA Poison Control: 1-888-426-4435.",
-      "Go to the emergency vet immediately."
+      "Keep your pet as calm and still as possible.",
+      "Do not muzzle your pet.",
+      "Minimize handling and transport carefully.",
+      "Go to the emergency vet immediately — do not wait."
         ]
     },
     {
-        "title": "Bleeding",
-        "urgency": "Monitor",
+        "title": "Heatstroke",
+        "urgency": "ER",
         "steps": [
-      "Apply firm, direct pressure with a clean cloth or gauze.",
-      "Do not remove the cloth — add more on top if soaked through.",
-      "Keep your pet calm and still.",
-      "If bleeding does not slow within 5 minutes, go to the emergency vet."
+      "Move your pet to a cool, shaded area immediately.",
+      "Apply cool (not cold) water to paws, armpits, and groin.",
+      "Offer small sips of cool water if conscious.",
+      "Fan your pet while applying water.",
+      "Go to the emergency vet immediately — do not wait."
         ]
     },
     {
@@ -55,13 +55,13 @@
         ]
     },
     {
-        "title": "Difficulty Breathing",
+        "title": "Toxic Food or Poison",
         "urgency": "ER",
         "steps": [
-      "Keep your pet as calm and still as possible.",
-      "Do not muzzle your pet.",
-      "Minimize handling and transport carefully.",
-      "Go to the emergency vet immediately — do not wait."
+     "Do NOT induce vomiting unless directed by a vet.",
+      "Identify the substance if possible and note the amount ingested.",
+      "Call ASPCA Poison Control: 1-888-426-4435.",
+      "Go to the emergency vet immediately."
         ]
-    }
+    }  
 ]
