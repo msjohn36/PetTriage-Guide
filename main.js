@@ -37,9 +37,10 @@ async function quickHelp (){
 
         data.forEach(card => {
             const urgencyClass = card.urgency === "ER" ? "qh-urgency--er": "qh-urgency--monitor";
-            const urgencyLabel = card.urgency === "ER"?"Emergency" : "Monitor";
+            const urgencyLabel = card.urgency === "ER" ? "Emergency" : "Monitor";
+            const cardClass = card.urgency === "ER" ? "quick-help-card er" : "quick-help-card";
             const stepsHtml=card.steps.map(step => `<li>${step}</li>`).join("");
-            const cardHtml = `<div class="quick-help-card">
+            const cardHtml = `<div class="${cardClass}">
                     <div class="qh-card-header">
                         <h3>${card.title}</h3>
                         <span class="qh-urgency ${urgencyClass}">${urgencyLabel}</span>
