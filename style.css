@@ -472,11 +472,11 @@ main section > p {
 	border-radius: 999px;
 }
 .qh-urgency--er {
-	background-color: var(--red);
+	background: var(--red);
 	color: var(--white);
 }
 .qh-urgency--monitor {
-	background-color: rgba(var(--teal-rgb), 0.2);
+	background: var(--teal);
 	color: var(--navy);
 }
 .qh-steps {
