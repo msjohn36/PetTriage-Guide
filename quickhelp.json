@@ -10,18 +10,6 @@
         ]
     },
     {
-        "title": "Choking",
-        "urgency": "ER",
-        "steps": [
-      "Stay calm and restrain your pet gently.",
-      "Look inside the mouth for a visible object — remove only if easily reachable.",
-      "For small pets: hold upside down and give 5 firm back blows between shoulder blades.",
-      "For large pets: give 5 sharp back blows between shoulder blades.",
-      "Perform pet Heimlich maneuver if back blows fail.",
-      "Rush to emergency vet even if the obstruction clears."
-        ]
-    },
-    {
         "title": "Difficulty Breathing",
         "urgency": "ER",
         "steps": [
@@ -31,16 +19,25 @@
       "Go to the emergency vet immediately — do not wait."
         ]
     },
-    {
-        "title": "Heatstroke",
-        "urgency": "ER",
-        "steps": [
-      "Move your pet to a cool, shaded area immediately.",
-      "Apply cool (not cold) water to paws, armpits, and groin.",
-      "Offer small sips of cool water if conscious.",
-      "Fan your pet while applying water.",
-      "Go to the emergency vet immediately — do not wait."
+   {
+    "title": "Mild Vomiting",
+    "urgency": "Monitor",
+    "steps": [
+      "Withhold food for 6–12 hours (if adult and otherwise healthy).",
+      "Offer small amounts of water frequently.",
+      "Reintroduce bland food slowly (boiled chicken and rice).",
+      "If vomiting continues more than 24 hours, contact your vet."
         ]
+    },
+    {
+    "title": "Minor Limp",
+    "urgency": "Monitor",
+    "steps": [
+      "Restrict activity and keep your pet rested.",
+      "Check the paw for debris or injury.",
+      "Avoid giving human medications.",
+      "If limping lasts more than 24–48 hours, see your vet."
+     ]
     },
     {
         "title": "Seizure",
