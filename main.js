@@ -93,7 +93,7 @@ function petInfo(){
     });
 
     function loadPetInfo(){
-        const saved = localStorage.getInfo("petInfo");
+        const saved = localStorage.getItem("petInfo");
          if (!saved) return;
 
          const data = JSON.parse(saved);
@@ -118,10 +118,10 @@ function petInfo(){
         const ageHtml = data.age
         ? `<p><strong>Age(years or months):</strong> ${data.age}</p>` :"";
         const weightHtml = data.weight
-        ? `<p><strong>Weight(lbs):</strong> ${data.age}</p>` :"";
+        ? `<p><strong>Weight(lbs):</strong> ${data.weight}</p>` :"";
 
         display.innerHTML = 
-        `<div class ="pet-info-card>
+        `<div class ="pet-info-card">
             <h3>Saved Pet Information</h3>
 
             <div class = "pet-info-grid">
@@ -143,7 +143,7 @@ function petInfo(){
                 </div>
                 <div class="pet-info-section">
                     <h4>Emergency Vet Clinic</h4>
-                    <p><strong>Clinic:</strong> ${data.erVetNameName}</p>
+                    <p><strong>Clinic:</strong> ${data.erVetName}</p>
                     <p><strong>Phone:</strong> <a href="tel: ${data.erVetPhone}">${data.erVetPhone}</a></p>
                     <p><strong>Address:</strong> ${data.erVetAddress}</p>
                 </div>
