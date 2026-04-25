@@ -426,52 +426,61 @@
         
             <section id="my-pet-info">
                 <h2>My Pet Info</h2>
-                    <p>Store important information about your pet for easy access during emergencies.</p>
+                    <p>Store important information about your pet for easy access during emergencies. ( <span class="required">*</span> required fields)</p>
                 <form id="pet-info">
                     <fieldset>
-                    <legend>Enter Your Pet's Information:</legend>
+                    <legend>Enter Your Pet's Information</legend>
 
-                        <label for="pet-name">Pet's Name:</label>
+                        <label for="pet-name">Pet's Name: <span class="required">*</span></label>
                         <input type="text" id="pet-name" name="pet-name" required>
 
-                        <label for="pet-species">Species:</label>
+                        <label for="pet-species">Species: <span class="required">*</span></label>
                         <select id="pet-species" name="pet-species" required>
                             <option value="">Select Species</option>
                             <option value="Dog">Dog</option>
                             <option value="Cat">Cat</option>
                         </select>
 
+                        <label for="pet-sex">Sex: <span class="required">*</span></label>
+                        <select id="pet-sex" name="pet-sex" required>
+                            <option value="">Select Sex</option>
+                            <option value="Female">Female</option>
+                            <option value="Female Spayed">Female Spayed</option>
+                            <option value="Male">Male</option>
+                            <option value="Male Neutered">Male Neutered</option>
+                        </select>
+
                         <label for="pet-breed">Breed:</label>
                         <input type="text" id="pet-breed" name="pet-breed">
 
                         <label for="pet-age">Age(years or months):</label>
-                        <input type="text" id="pet-age" name="pet-age" required>
+                        <input type="text" id="pet-age" name="pet-age">
 
                         <label for="pet-weight">Weight (lbs):</label>
-                        <input type="text" id="pet-weight" name="pet-weight" required>
+                        <input type="text" id="pet-weight" name="pet-weight">
                     </fieldset>
                     <fieldset>
-                        <legend>Your Vet Clinic Information:</legend>
+                        <legend>Your Vet Clinic Information</legend>
 
-                        <label for="vet-clinic-name">Clinic Name:</label>
+                        <label for="vet-clinic-name">Clinic Name: <span class="required">*</span></label>
                         <input type="text" id="vet-clinic-name" name="vet-clinic-name" required>
 
-                        <label for="vet-clinic-phone">Clinic Phone:</label>
+                        <label for="vet-clinic-phone">Clinic Phone: <span class="required">*</span></label>
                         <input type="tel" id="vet-clinic-phone" name="vet-clinic-phone" placeholder="(555)123-4567" required>
 
-                        <label for="vet-clinic-address">Clinic Address:</label>
+                        <label for="vet-clinic-address">Clinic Address:<span class="required">*</span></label>
                         <input type="text" id="vet-clinic-address" name="vet-clinic-address" placeholder="123 Pet Street, Anytown, USA" required>
                     </fieldset>
                     <fieldset>
-                        <legend>Local Emergency Vet Contact Information:</legend>
+                        <legend>Local Emergency Vet Contact Information</legend>
 
-                        <label for="ER-vet-name">Emergency Vet Name:</label>
+                        <label for="ER-vet-name">Emergency Vet Name:<span class="required">*</span></label>
                         <input type="text" id="ER-vet-name" name="ER-vet-name" required>
 
-                        <label for="ER-vet-phone">Emergency Vet Phone:</label>
+                        <label for="ER-vet-phone">Emergency Vet Phone: <span class="required">*</span></label>
                         <input type="tel" id="ER-vet-phone" name="ER-vet-phone" placeholder="(555)123-4567" required>
 
-                        <label for="ER-vet-clinic-address">Emergency Vet Address:</label>
+                        <label for="ER-vet-clinic-address">Emergency Vet Address:<span class="required">*</span></label>
                         <input type="text" id="ER-vet-clinic-address" name="ER-vet-clinic-address" placeholder="123 Pet Street, Anytown, USA" required>
                     </fieldset>
                     <div class="button">
