@@ -508,11 +508,14 @@ main section > p {
 	padding: 0;
 }
 #my-pet-info legend {
+	display: block;
+	width: 100%;
 	font-family: var(--font-heading);
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 0.75rem;
 	color: var(--navy);
+	border-bottom: 4px solid var(--teal);
 }
 #my-pet-info label {
 	display: block;
@@ -538,6 +541,10 @@ main section > p {
 }
 #my-pet-info select {
 	cursor: pointer;
+}
+.required {
+	font-size: 20px;
+	color: var(--red);
 }
 #my-pet-info button {
 	margin-top: 1rem;
