@@ -162,7 +162,6 @@ main section h2{
 main section > p {
 	color: var(--navy-dark);
 	margin-bottom: 1.5rem;
-	max-width: 680px;
 }
 
 /* hero section */
@@ -284,15 +283,17 @@ main section > p {
 	color: var(--navy-dark);
 	margin-bottom: 1.25rem;
 }
-/* #er-guide h2, #er-guide p {
+#er-guide h2, #er-guide p:first-of-type {
 	padding-left: 2rem;
-} */
+}
 #er-guide > p:nth-of-type(2) {
 	background: var(--teal);
 	color: var(--white);
 	font-weight: 700;
 	border-radius: 4px;
 	text-align: center;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 #accordion {
 	border: none;
@@ -508,7 +509,7 @@ main section > p {
 }
 #my-pet-info legend {
 	font-family: var(--font-heading);
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 0.75rem;
 	color: var(--navy);
@@ -521,7 +522,7 @@ main section > p {
 	margin-bottom: 0.25rem;
 	color: var(--navy);
 }
-#my-pet-info input {
+#my-pet-info input, #my-pet-info select {
 	width: 100%;
 	padding: 0.5rem;
 	border: none;
@@ -532,8 +533,11 @@ main section > p {
 	color: var(--navy);
 	outline: none;
 }
-#my-pet-info input:focus {
+#my-pet-info input:focus, #my-pet-info select:focus {
 	border-bottom-color: var(--teal);
+}
+#my-pet-info select {
+	cursor: pointer;
 }
 #my-pet-info button {
 	margin-top: 1rem;
