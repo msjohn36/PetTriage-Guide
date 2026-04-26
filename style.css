@@ -234,7 +234,7 @@ main section > p {
 	left: 0;
 	right: 0;
 	padding: 1rem;
-	background: rgba(var(--teal-rgb), 0.9);
+	background: rgba(107, 183, 176, 0.9);
 	color: var(--white);
 	z-index: 10;
 }
