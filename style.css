@@ -683,6 +683,7 @@ footer {
 	border-top: 2px solid var(--navy-dark);
 	padding: 2rem;
 	color: var(--white);
+	text-align: center;
 }
 #contact {
 max-width: 1200px;
