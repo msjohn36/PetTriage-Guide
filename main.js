@@ -125,7 +125,7 @@ function petInfo(){
             <h3>Saved Pet Information</h3>
 
             <div class = "pet-info-grid">
-                <div class = "pet-info-section"
+                <div class = "pet-info-section">
                     <h4> Pet Details</h4>
                     <p><strong>Name:</strong> ${data.name}</p>
                     <p><strong>Species:</strong> ${data.species}</p>
