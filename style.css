@@ -38,7 +38,6 @@ footer, header, hgroup, menu, nav, section {
 	--navy-dark: #1B2F47;
 	--navy-light: #4A5F74;
 	--teal: #6BB7B0;
-	--teal-rgb: 107, 183, 176;
 	--teal-light: #8FD1CB;
 	--red: #E94B4B;
 	--white: #FFFFFF;
@@ -696,33 +695,33 @@ margin: 0 auto 1.5rem;
 }
 #contact p {
 	font-size: 16px;
-	color: var(--teal-light);
+	color: var(--white);
 	margin-bottom: 0.5rem;
 }
 #contact ul {
 	list-style: none;
 	padding: 0;
-	color: var(--teal-light);
+	color: var(--white);
 }
 #contact ul li {
 	margin-bottom: 0.25rem;
 }
 #contact a {
-	color: var(--teal-light);
+	color: var(--white);
 }
 #contact a:hover {
-	color: var(--white);
+	color: var(--teal-light);
 }
 footer > p{
 	text-align: center;
 	font-size: 14px;
-	color: var(--teal-light);
+	color: var(--white);
 	margin-top: 0.75rem;
 }
 footer p a {
 	text-decoration: none;
-	color: var(--teal-light);
+	color: var(--white);
 }
 footer p a:hover {
-	color: var(--white);
+	color: var(--teal-light);
 }
